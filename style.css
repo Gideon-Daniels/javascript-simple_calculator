@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppings", sans-serif;
+    font-size: 1rem;
+}
+
+#main{
+   display: flex;
+   border: solid grey 3px;
+   border-radius: 2px;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   max-height: 100vh;
+   max-width: 400px;
+   margin: 0 auto;
+   background: indigo;
+   font-size: 1rem;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main .display{
+    padding: 2px;
+    width: 98%;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 10px;
+    background: grey;
+    outline: none;
+    border: none;
+}
+
+#main .display .output{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    outline: none; 
+    border: none;
+    border-bottom: indigo solid 2px;
+    background: grey;
+    color:indigo;
+}
+
+#main .buttons{
+    padding: 12px;
+    width: 100%;
+    display: flex;
+}
+
+#main .buttons .buttons-numbers{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap : 5px;
+}
+
+.button-number{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+   background: grey;
+   border-radius: 2px;
+   cursor: pointer;
+}
+#main .buttons .buttons-arithmetic{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: column;
+    gap: 5px;
+}
+.button-arithmetic{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    background: grey;
+    border-radius: 2px;
+    cursor: pointer;
+}

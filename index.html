@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple Calculator</title>
+</head>
+<div id="main">
+    <div class="display">
+        <input type="text" id="output" class="output">
+    </div>
+    <div class="buttons">    
+        <div class="buttons-numbers">
+            <div class="row-one">
+                <button onclick ="buttonClick(7)" class="button button button-number">7</button>
+                <button onclick ="buttonClick(8)" class="button button-number">8</button>
+                <button onclick ="buttonClick(9)" class="button button-number">9</button>
+            </div>
+            <div class="row-two">
+                <button onclick ="buttonClick(4)" class="button button-number">4</button>
+                <button onclick ="buttonClick(5)" class="button button-number">5</button>
+                <button onclick ="buttonClick(6)" class="button button-number">6</button>
+            </div>
+            <div class="row-three">
+                <button onclick ="buttonClick(1)" class="button button-number">1</button>
+                <button onclick ="buttonClick(2)" class="button button-number">2</button>
+                <button onclick ="buttonClick(3)" class="button button-number">3</button>
+            </div>
+            <div class="row-four">
+                <button onclick ="clearOutput()" class="button button-number">C</button>
+                <button onclick ="buttonClick(0)" class="button button-number">0</button>
+                <button onclick ="buttonClick('.')" class="button button-number">.</button>
+            </div>
+            
+        </div>
+        <div class="buttons-arithmetic">
+            <div class="row-one">
+                <button onclick ="buttonClick('*')" class="button button-arithmetic">x</button>
+                <button onclick ="buttonClick('/')" class="button button-arithmetic">÷</button>
+                <!-- <button class="button button-arithmetic">OFF</button> -->
+                
+            </div>
+            <div class="row-two">
+                
+                <button onclick ="buttonClick('-')" class="button button-arithmetic">-</button>
+                <button onclick ="buttonClick('+')" class="button button-arithmetic">+</button>
+            </div>
+            <div class="row-two">
+                <button onclick ="equals()" class="button button-arithmetic">=</button>
+            </div>  
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="./main.js"></script>
+<body>
+    
+</body>
+</html>
